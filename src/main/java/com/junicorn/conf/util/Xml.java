@@ -14,9 +14,11 @@ public class Xml {
 	
 	public Xml(String filePath) {
 		String xmlPath = Xml.class.getResource(filePath).toString();
+		System.out.println(xmlPath);
 		if (xmlPath.substring(5).indexOf(":") > 0) {
 			// 路径中含有：分隔符，windows系统
 			xmlPath = xmlPath.substring(6);
+			System.out.println(xmlPath);
 		} else {
 			xmlPath = xmlPath.substring(5);
 		}
