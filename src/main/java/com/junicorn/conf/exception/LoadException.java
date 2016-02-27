@@ -14,5 +14,4 @@ public class LoadException extends RuntimeException {
 	public LoadException(Throwable t){
 		super(t);
 	}
-	
 }
